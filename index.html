@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Nighit Routine Support</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <% if flash[:notice] %>
-      <div class="flash">
-        <%= flash[:notice] %>
-      </div>
-    <% end %>
-  </head>
-
-  <body>
-    <header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nighit Routine Support</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+  <header>
       <div class="header-logo">
         <%= link_to("Nighit Routine Support","/") %>
       </div>
@@ -30,20 +22,15 @@
           <%= link_to("新規投稿","/posts/new") %>
         </li>
       </ul>
-    </header>
-    <%= yield %>
-      
-  <div class="about-main">
-  <h2>Nighit Routine Supportとは</h2>
-  <p>
-    <br>
-    家族間で、夜のタスクを共有し管理するアプリです。<br>
-    夜は家族の帰ってくる時間、睡眠時間がバラバラでタスクをこなしにくい事がありませんか？<br><br>
-    ・あなたの愛猫が、既にご飯を貰ったのに二重徴収しようとしてきたとき、<br>
-    ・お風呂を洗いたいけれど、全員入り終わったのか分からないとき、<br><br>
-    わざわざ家族を叩き起こす必要はありません。アプリで確認してみましょう。<br><br>
-  </p>
+  </header>
+  <div class="main top-main">
+  <div class="inner">
+     <div class="top-message">
+       <h2>もうみんなお風呂入ったのかな？ 誰か猫にごはんあげた？
+       <br>家族の夜のタスクを共有して最適化しよう！
+      </h2>
+    </div>
+  </div>
 </div>
-
-  </body>
+</body>
 </html>
